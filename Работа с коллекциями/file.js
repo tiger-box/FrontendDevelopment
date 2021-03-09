@@ -6,9 +6,9 @@
 let array = [1,4,5,99,16,53,64,5];
 let result = 1;
 
-for (let i = 0; i < array.length; i++) {
-    if (array[i] % 2 === 0) {
-        result *= Math.sqrt(array[i]);
+for (let item of array)  {
+    if (item % 2 === 0) {
+        result *= Math.sqrt(item);
     }
 }
 
