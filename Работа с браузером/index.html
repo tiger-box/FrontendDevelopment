@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Работа с браузером</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form id="form">
+        <div style="margin-bottom: 18px; font-weight: bold;">
+            Вычисление произведения квадратных корней для всех чётных чисел целочисленного массива
+        </div>
+
+        <div style="margin-bottom: 18px;"> 
+            <label for="count">Число элементов массива</label>
+            <input id="count" type="text" value="8" placeholder="Число элементов массива"/>
+            <input type="button" value="Заполнить массив" onclick="generateArrayFieldInput()">
+        </div>
+
+        <ol id="array_fields">
+            <li><input class="array_element" type="text" placeholder="0" value="1"/></li>
+            <li><input class="array_element" type="text" placeholder="1" value="4"/></li>
+            <li><input class="array_element" type="text" placeholder="2" value="5"/></li>
+            <li><input class="array_element" type="text" placeholder="3" value="99"/></li>
+            <li><input class="array_element" type="text" placeholder="4" value="16"/></li>
+            <li><input class="array_element" type="text" placeholder="5" value="53"/></li>
+            <li><input class="array_element" type="text" placeholder="6" value="64"/></li>
+            <li><input class="array_element" type="text" placeholder="7" value="5"/></li>
+        </ol>
+
+        <div style="margin-top: 18px;">
+            <input type="button" value="Рассчитать" onclick="calc()">
+        </div>
+
+        <div id="result" style="margin-top: 18px;"></div>
+    </form>
+</body>
+</html>
