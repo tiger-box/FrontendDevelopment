@@ -1,0 +1,7 @@
+<p>Список дел</p>
+<div>
+    <div *ngFor="let task of tasks" class="task">
+        <div class="name">Задача: {{task.name}}</div>
+        <div calss="description">Описание: {{task.description}}</div>
+    </div>
+</div>
