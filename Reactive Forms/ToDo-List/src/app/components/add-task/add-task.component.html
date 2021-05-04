@@ -1,0 +1,23 @@
+<div class="content-container">
+  <p>Добавить задачу</p>
+
+  <form class="form"
+        [formGroup]="addTaskForm" novalidate
+        (ngSubmit)="onSubmit()"
+  >
+    <div class="form-element">
+      <label for="taskName">Название задачи</label>
+      <input type="text" class="text-field"  id="taskName" formControlName="name" />
+    </div>
+
+    <div class="form-element">
+      <label for="taskDescription">Описание задачи</label>
+      <textarea class="text-area" id="taskDescription" rows="10" formControlName="description"></textarea>
+    </div>
+
+    <div class="form-element">
+      <input class="btn" type="submit" value="Добавить"/>
+    </div>
+  </form>
+  <a class="link" routerLink="">На главную</a>
+</div>
