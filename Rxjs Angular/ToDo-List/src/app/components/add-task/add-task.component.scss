@@ -1,0 +1,28 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  .form-element {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0;
+    font-size: 12pt;
+
+    label {
+      margin: 8px 0;
+      font-weight: bold;
+      font-size: 14pt;
+    }
+
+    .text-field {
+      height: 24px;
+      font-size: 14pt;
+    }
+
+    .text-area {
+      height: 180px;
+      font-size: 14pt;
+      resize: none;
+    }
+  }
+}
