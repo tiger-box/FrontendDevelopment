@@ -1,0 +1,12 @@
+<p>Список дел</p>
+<div class="content-container">
+  <div *ngFor="let task of tasks; let i = index" class="task">
+    <div class="name">{{task.name | taskNameFormat}}</div>
+    <div class="description">{{task.description | taskDescriptionFormat}}</div>
+    <a class="link" [routerLink]="['/task', i]">Подробнее</a>
+  </div>
+
+  <div>
+    <a class="btn" routerLink="addtask">Добавить задачу</a>
+  </div>
+</div>
